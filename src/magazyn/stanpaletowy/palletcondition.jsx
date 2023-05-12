@@ -16,14 +16,15 @@ export const StanPaletowy = () => {
   const [paletyWydane, setPaletyWydane] = useState("");
 
   const handleCountResult = () => {
-    if (
-      free === 0 &&
-      rawmaterial === 0 &&
-      andersa === 0 &&
-      finishedProduct === 0
-    )
-      setResult(2040 - free - finishedProduct + rawmaterial + andersa);
+    setResult(2040 - free - finishedProduct + rawmaterial + andersa);
+    console.log(result);
 
+    console.log(free);
+    console.log(finishedProduct);
+    console.log(rawmaterial);
+    console.log(andersa);
+    console.log(setResult);
+    console.log(2040 - free - finishedProduct + rawmaterial + andersa);
     // wysyłanie e-mail
     setMessageBody(`\n
     Wolne miejsca: ${free} \n 
@@ -59,7 +60,7 @@ export const StanPaletowy = () => {
                 Wpisz dane aby wykonać obliczenie
               </p>
             </div>
-            <form>
+            <form className="forminput">
               <div className="free">
                 <p className="mintext-pallet">Ile jest wolnych miejsc?</p>
               </div>

@@ -39,13 +39,13 @@
   background-position: left;
 }
 .slider-main .slide:nth-child(2) {
-  background-image: url("/public/img/statystyki.jpg");
+  background-image: url("/public/img/dashboard.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
 }
 .slider-main .slide:nth-child(3) {
-  background-image: url("/public/img/dostawy1.jpg");
+  background-image: url("/public/img/tablicakanban.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
